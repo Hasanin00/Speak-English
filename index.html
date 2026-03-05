@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function CL(){
+        window.open("registration.html", "_blank");
+    }
+
+    // Ждем, пока загрузится весь HTML, прежде чем искать кнопки
+    document.addEventListener("DOMContentLoaded", () => {
+        let but = document.getElementById("prob2");
+        let but2 = document.getElementById("prob");
+        
+        if(but) but.addEventListener("click", CL);
+        if(but2) but2.addEventListener("click", CL);
+    });
+    </script>
+
+</head>
+<body>
+    <div id="b">
+        <div>
+            <img class="headerlogo" src="img/лого.png" alt="Логотип" width="210" height="110">
+            <div class="l">
+                <button id="prob">Пройти пробное тестирование</button>
+            </div>
+        </div>
+        
+    </div>
+    <div  class="qwadrat">
+        <h2 align="center">Зачем нужен английский?</h2> 
+        <p class="awtxt" align="center">Английский открывает двери в мир: это доступ к передовым знаниям, высокооплачиваемой работе и свободному общению в любой стране. Вы сможете смотреть кино в оригинале, понимать инструкции и заводить друзей по всей планете. Это мощный инструмент саморазвития, который расширяет границы ваших возможностей и кругозора.</p>
+    </div>
+    <div class="card1">
+        <h2>Просто и понятно</h2>
+        <p>
+            В наших модулях используеться способы понятного обьяснения материала
+        </p>
+    </div>
+    <div class="card2">
+        <h2>Развиваем словарный запас</h2>
+        <p>
+            С нами вы узнаете много слов. Наши методисты подбирают слова под разные тематики.
+        </p>
+    </div>
+    <div class="card3">
+        <h2>Все бесплатно</h2>
+        <p>
+            Проект не преследует экономические цели и стараеться сделать доп обучение доступным для каждого.
+        </p>
+    </div>
+    <div class="form">
+        <h2 align="center">Попробуй прямо сейчас!</h2> 
+        <button id="prob2">Пройти пробное тестирование</button>
+
+
+    </div>
+    <footer>
+        
+    </footer>
+</body>
+</html>

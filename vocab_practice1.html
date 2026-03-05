@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="b">
+        <img class="headerlogo" src="img/лого.png" alt="Логотип" width="210" height="110">
+    </div>
+
+    <div class="qwadrat">
+        <h2 align="center">✏️ Практика №1</h2>
+        <p class="awtxt" align="center">Закрепите первые 5 слов</p>
+    </div>
+
+    <div class="test-container">
+        <form id="practice1-form">
+            
+            <div class="test-question">
+                <p>1. I want to _____ my dreams.</p>
+                <div class="test-options">
+                    <input type="radio" name="p1q1" value="A" id="p1q1a"><label for="p1q1a">A) accomplish</label><br>
+                    <input type="radio" name="p1q1" value="B" id="p1q1b"><label for="p1q1b">B) opportunity</label><br>
+                    <input type="radio" name="p1q1" value="C" id="p1q1c"><label for="p1q1c">C) efficient</label>
+                </div>
+            </div>
+
+            <div class="test-question">
+                <p>2. There was a _____ change in weather.</p>
+                <div class="test-options">
+                    <input type="radio" name="p1q2" value="A" id="p1q2a"><label for="p1q2a">A) challenge</label><br>
+                    <input type="radio" name="p1q2" value="B" id="p1q2b"><label for="p1q2b">B) significant</label><br>
+                    <input type="radio" name="p1q2" value="C" id="p1q2c"><label for="p1q2c">C) accomplish</label>
+                </div>
+            </div>
+
+            <div class="test-question">
+                <p>3. This method is very _____.</p>
+                <div class="test-options">
+                    <input type="radio" name="p1q3" value="A" id="p1q3a"><label for="p1q3a">A) opportunity</label><br>
+                    <input type="radio" name="p1q3" value="B" id="p1q3b"><label for="p1q3b">B) efficient</label><br>
+                    <input type="radio" name="p1q3" value="C" id="p1q3c"><label for="p1q3c">C) challenge</label>
+                </div>
+            </div>
+
+            <div class="test-question">
+                <p>4. Learning is a _____.</p>
+                <div class="test-options">
+                    <input type="radio" name="p1q4" value="A" id="p1q4a"><label for="p1q4a">A) accomplish</label><br>
+                    <input type="radio" name="p1q4" value="B" id="p1q4b"><label for="p1q4b">B) significant</label><br>
+                    <input type="radio" name="p1q4" value="C" id="p1q4c"><label for="p1q4c">C) challenge</label>
+                </div>
+            </div>
+
+            <div class="test-question">
+                <p>5. Don't miss this _____!</p>
+                <div class="test-options">
+                    <input type="radio" name="p1q5" value="A" id="p1q5a"><label for="p1q5a">A) opportunity</label><br>
+                    <input type="radio" name="p1q5" value="B" id="p1q5b"><label for="p1q5b">B) efficient</label><br>
+                    <input type="radio" name="p1q5" value="C" id="p1q5c"><label for="p1q5c">C) significant</label>
+                </div>
+            </div>
+
+            <div align="center" style="margin-top: 30px;">
+                <button type="button" class="module-btn" id="check-practice1">ПРОВЕРИТЬ</button>
+            </div>
+        </form>
+
+        <div id="practice1-result" style="display:none; margin-top:20px;"></div>
+
+        <div align="center" style="margin-top: 20px;">
+            <button type="button" class="module-btn" style="background-color:#21b0fe;" onclick="window.location.href='vocab_words2.html'" id="next-words2" disabled>К СЛОВАМ 6-10</button>
+        </div>
+    </div>
+
+    <script src="logiks.js"></script>
+</body>
+</html>

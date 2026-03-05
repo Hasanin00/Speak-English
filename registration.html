@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer>
+        document.addEventListener("DOMContentLoaded", () => {
+            let but = document.getElementById("go");
+            let but2 = document.getElementById("prob");
+
+            function CL(e){
+                e.preventDefault();
+                window.open("reg.html", "_blank");
+            }
+            function go(e){
+                e.preventDefault();
+                window.location.href = "vxodnoetest.html"; 
+            }
+
+            if(but) but.addEventListener("click", go);
+            if(but2) but2.addEventListener("click", CL);
+        });
+    </script>
+</head>
+<body>
+    <div id="b">
+        <div class="header-wrapper">
+            <img class="headerlogo" src="img/лого.png" alt="Логотип" width="210" height="110">
+            <div class="l">
+                <!-- Добавлено type="button" -->
+                <button type="button" id="prob">Пройти пробное тестирование</button>
+            </div>
+        </div>     
+    </div>
+
+    <div class="reg">
+        <h2 align="center">Введите данные:</h2>
+        <form action="" method="post">
+            <center>
+                <table class="reg">
+                    <tr><td align="center">Введите имя:</td></tr>
+                    <tr><td align="center"><input maxlength="10" type="text" id="name" name="name"></td></tr>
+                    <tr><td align="center">Введите дату рождения:</td></tr>
+                    <tr><td align="center"><input type="date" id="age" name="age"></td></tr>
+                    <tr><td align="center">
+                        <!-- Добавлено type="button" — ГЛАВНОЕ ИСПРАВЛЕНИЕ -->
+                        <button type="button" id="go">Продолжить</button>
+                    </td></tr>
+                </table>
+            </center>
+        </form>
+    </div>
+</body>
+</html>

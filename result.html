@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результаты теста</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Дополнительные стили только для страницы результатов */
+        .result-box {
+            background-color: #fff;
+            width: 70%;
+            margin: 5% auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        .level-title {
+            font-size: 36px;
+            color: #fe218b;
+            margin-bottom: 10px;
+        }
+        .score-big {
+            font-size: 48px;
+            color: #21b0fe;
+            font-weight: bold;
+        }
+        .analysis-list {
+            text-align: left;
+            margin-top: 30px;
+            font-size: 18px;
+        }
+        .item-correct {
+            color: green;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .item-wrong {
+            color: red;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            background-color: #ffe6e6;
+        }
+        .btn-restart {
+            background-color: #fed700;
+            color: #fe218b;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        .btn-restart:hover {
+            background-color: #fe218b;
+            color: #fed700;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="b">
+        <img class="headerlogo" src="img/лого.png" alt="Логотип" width="210" height="110">
+    </div>
+
+    <div id="results-display" class="result-box">
+        <p>Загрузка результатов...</p>
+    </div>
+
+    <div style="text-align: center;">
+        <button class="btn-restart" onclick="restartTest()">Пройти заново</button>
+    </div>
+
+    <script src="logiks.js"></script>
+    <script>
+        // Функция перезапуска (очищает память и возвращает назад)
+        function restartTest() {
+            localStorage.removeItem('quizAnswers');
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

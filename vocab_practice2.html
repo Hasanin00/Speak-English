@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="b">
+        <img class="headerlogo" src="img/лого.png" alt="Логотип" width="210" height="110">
+    </div>
+
+    <div class="qwadrat">
+        <h2 align="center">✏️ Практика №2</h2>
+        <p class="awtxt" align="center">Закрепите слова 6-10</p>
+    </div>
+
+    <div class="test-container">
+        <form id="practice2-form">
+            
+            <div class="test-question">
+                <p>1. Hard work will _____ your success.</p>
+                <div class="test-options">
+                    <input type="radio" name="p2q1" value="A" id="p2q1a"><label for="p2q1a">A) determine</label><br>
+                    <input type="radio" name="p2q1" value="B" id="p2q1b"><label for="p2q1b">B) recognize</label><br>
+                    <input type="radio" name="p2q1" value="C" id="p2q1c"><label for="p2q1c">C) essential</label>
+                </div>
+            </div>
+
+            <div class="test-question">
+                <p>2. She worked hard to _____ her goals.</p>
+                <div class="test-options">
+                    <input type="radio" name="p2q2" value="A" id="p2q2a"><label for="p2q2a">A) develop</label><br>
+                    <input type="radio" name="p2q2" value="B" id="p2q2b"><label for="p2q2b">B) achieve</label><br>
+                    <input type="radio" name="p2q2" value="C" id="p2q2c"><label for="p2q2c">C) determine</label>
+                </div>
+            </div>
+
+            <div class="test-question">
+                <p>3. Water is _____ for life.</p>
+                <div class="test-options">
+                    <input type="radio" name="p2q3" value="A" id="p2q3a"><label for="p2q3a">A) recognize</label><br>
+                    <input type="radio" name="p2q3" value="B" id="p2q3b"><label for="p2q3b">B) essential</label><br>
+                    <input type="radio" name="p2q3" value="C" id="p2q3c"><label for="p2q3c">C) achieve</label>
+                </div>
+            </div>
+
+            <div class="test-question">
+                <p>4. Reading helps _____ your vocabulary.</p>
+                <div class="test-options">
+                    <input type="radio" name="p2q4" value="A" id="p2q4a"><label for="p2q4a">A) develop</label><br>
+                    <input type="radio" name="p2q4" value="B" id="p2q4b"><label for="p2q4b">B) essential</label><br>
+                    <input type="radio" name="p2q4" value="C" id="p2q4c"><label for="p2q4c">C) determine</label>
+                </div>
+            </div>
+
+            <div class="test-question">
+                <p>5. I can _____ this song!</p>
+                <div class="test-options">
+                    <input type="radio" name="p2q5" value="A" id="p2q5a"><label for="p2q5a">A) achieve</label><br>
+                    <input type="radio" name="p2q5" value="B" id="p2q5b"><label for="p2q5b">B) develop</label><br>
+                    <input type="radio" name="p2q5" value="C" id="p2q5c"><label for="p2q5c">C) recognize</label>
+                </div>
+            </div>
+
+            <div align="center" style="margin-top: 30px;">
+                <button type="button" class="module-btn" id="check-practice2">ПРОВЕРИТЬ</button>
+            </div>
+        </form>
+
+        <div id="practice2-result" style="display:none; margin-top:20px;"></div>
+
+        <div align="center" style="margin-top: 20px;">
+            <button type="button" class="module-btn" style="background-color:#fe218b;" onclick="window.location.href='vocab_test.html'" id="next-test" disabled>К ИТОГОВОМУ ТЕСТУ</button>
+        </div>
+    </div>
+
+    <script src="logiks.js"></script>
+</body>
+</html>

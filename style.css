@@ -1,0 +1,775 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif; /* Добавил шрифт для красоты */
+}
+
+div#b{
+    width: 100%;
+    height: 120px;
+    background-color: #fed700;
+}
+
+button#prob{
+    background-color: #ffffff;
+    border: 2px dashed #ffffff ;
+    border-radius: 20px;
+    color: #fe218b;
+    font-weight: bold;
+    height: 50px;
+    width: 120%;
+}
+
+div.l{
+    margin-left: 70%;
+    margin-top: 2%;
+    float: left;
+}
+
+img.headerlogo{
+    float: left;
+}
+
+h2{
+    color: #fff ;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+div.qwadrat{ 
+    background-color: #21b0fe;
+    width: 70%;
+    margin-left: 15%;
+    border: 10px dashed #21b0fe ;
+    height: 400px;
+    margin-top: 5%;
+    font-size: 40px;
+    color: #fff ;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+p.awtxt{
+    margin-bottom: 30%;
+    font-size: 35px;
+}
+
+hr{
+    color: #f8eebc;
+    background-color: #f8eebc;
+    size: 400px;
+}
+
+div.card1{
+    background-color: #fe218b;
+    margin-left: 17%;
+    margin-top: 5%;
+    width: 15%;
+    height: 400px;
+    border-radius: 20px;
+    border: 10px solid #fed700;
+    color: #fff;
+    font-size: 25px;
+    margin-right: 0;
+    float: left;
+    transition: 1s;
+}
+
+div.card2{
+    background-color: #21b0fe;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 15%;
+    height: 400px;
+    border-radius: 20px;
+    border: 10px solid #fe218b;
+    color: #fff;
+    font-size: 25px;
+    float: left;
+    transition: 1s;
+}
+
+div.card3{
+    background-color: #fe218b;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 15%;
+    height: 400px;
+    border-radius: 20px;
+    border: 10px solid #fed700;
+    color: #fff;
+    font-size: 25px;
+    margin-right: 0;
+    float: left;
+    transition: 1s;
+}
+
+div.card2:hover{
+    background-color: #21b0fe;
+    margin-left: 15%;
+    margin-top: 3%;
+    width: 15%;
+    height: 400px;
+    border-radius: 20px;
+    border: 10px solid #fe218b ;
+    color: #fff;
+    font-size: 25px;
+    float: left;
+}
+
+div.card1:hover{
+    background-color: #fe218b;
+    margin-left: 22%;
+    margin-top: 3%;
+    width: 15%;
+    height: 400px;
+    border-radius: 20px;
+    border: 10px solid #fed700;
+    color: #fff;
+    font-size: 25px;
+    margin-right: 0;
+    float: left;
+}
+
+div.card3:hover{
+    background-color: #fe218b;
+    margin-left: 15%;
+    margin-top: 3%;
+    width: 15%;
+    height: 400px;
+    border-radius: 20px;
+    border: 10px solid #fed700;
+    color: #fff;
+    font-size: 25px;
+    margin-right: 0;
+    float: left;
+}
+
+div.form{ 
+    background-color: #21b0fe;
+    width: 70%;
+    margin-left: 15%;
+    border: 10px dashed #21b0fe ;
+    height: 400px;
+    margin-top: 35%;
+    font-size: 40px;
+    color: #fff ;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+button#prob2{
+    background-color: #fe218b;
+    border: 2px solid #ffffff ;
+    border-radius: 20px;
+    color: #fed700;
+    font-weight: bold;
+    height: 80px;
+    width: 50%;
+    font-size: 20px;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+div.reg{ 
+    background-color: #21b0fe;
+    width: 40%;
+    margin-left: 30%;
+    border: 10px dashed #fe218b ;
+    height: 400px;
+    margin-top: 10%;
+    font-size: 40px;
+    color: #fff ;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+div.reg input[type="text"]{
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    font-size: 18px;
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+div.reg input[type="date"]{
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    font-size: 18px;
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+button#go{
+    background-color: #fe218b;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    color: #fed700;
+    font-weight: bold;
+    font-size: 20px;
+    height: 50px;
+    width: 60%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+div.reg table{
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+div.reg form{
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* === СТИЛИ ДЛЯ ТЕСТА === */
+div.test-container {
+    background-color: #ffffff;
+    width: 70%;
+    margin-left: 15%;
+    min-height: 600px;
+    margin-top: 5%;
+    color: #000;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: 1s;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+div.test-question {
+    font-size: 28px;
+    margin: 25px 0;
+    padding: 15px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 15px;
+}
+
+div.test-options {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+div.test-options input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.3); /* Увеличиваем кружочки */
+    cursor: pointer;
+}
+
+div.test-options label {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+div.test-options label:hover {
+    background-color: rgba(254,33,139,0.3);
+    border-radius: 10px;
+}
+
+button#submit-test {
+    background-color: #fe218b;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    color: #fed700;
+    font-weight: bold;
+    height: 70px;
+    width: 50%;
+    font-size: 24px;
+    margin-left: 10%;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button#submit-test:hover {
+    background-color: #fed700;
+    color: #fe218b;
+}
+
+/* === АДАПТИВНОСТЬ === */
+@media (max-width: 1024px){
+    div.reg{
+        width: 60%;
+        margin-left: 20%;
+        height: auto;
+        min-height: 350px;
+    }
+    div.reg input[type="text"]{
+        width: 85%;
+        font-size: 16px;
+    }
+    div.reg input[type="date"]{
+        width: 85%;
+        font-size: 16px;
+    }
+    div.reg input[type="submit"]{
+        width: 70%;
+        font-size: 18px;
+    }
+    
+    div.test-container {
+        width: 90%;
+        margin-left: 5%;
+    }
+    div.test-question {
+        font-size: 24px;
+    }
+    div.test-options {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    div.reg{
+        width: 90%;
+        margin-left: 5%;
+        height: auto;
+        min-height: 300px;
+        font-size: 20px;
+    }
+    div.reg h2{
+        font-size: 24px;
+    }
+    div.reg input[type="text"]{
+        width: 90%;
+        font-size: 16px;
+        height: 45px;
+    }
+    div.reg input[type="date"]{
+        width: 90%;
+        font-size: 16px;
+        height: 45px;
+    }
+    div.reg input[type="submit"]{
+        width: 80%;
+        font-size: 18px;
+        height: 55px;
+    }
+    div.reg table{
+        font-size: 18px;
+    }
+
+    div#b{
+        height: auto;
+        padding: 10px 0;
+    }
+    div.l{
+        margin-left: 0;
+        margin-top: 10px;
+        float: none;
+        text-align: center;
+    }
+    img.headerlogo{
+        float: none;
+        display: block;
+        margin: 0 auto 10px;
+        width: 150px;
+        height: auto;
+    }
+    button#prob{
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+    div.qwadrat{
+        width: 95%;
+        margin-left: 2.5%;
+        height: auto;
+        min-height: 250px;
+        font-size: 24px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    p.awtxt{
+        font-size: 16px;
+        margin-bottom: 15%;
+    }
+    div.card1{
+        width: 90%;
+        margin-left: 5%;
+        float: none;
+        height: auto;
+        min-height: 200px;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    div.card2{
+        width: 90%;
+        margin-left: 5%;
+        float: none;
+        height: auto;
+        min-height: 200px;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    div.card3{
+        width: 90%;
+        margin-left: 5%;
+        float: none;
+        height: auto;
+        min-height: 200px;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    div.card1:hover{
+        margin-left: 5%;
+        margin-top: 20px;
+    }
+    div.card2:hover{
+        margin-left: 5%;
+        margin-top: 20px;
+    }
+    div.card3:hover{
+        margin-left: 5%;
+        margin-top: 20px;
+    }
+    div.form{
+        width: 95%;
+        margin-left: 2.5%;
+        height: auto;
+        min-height: 250px;
+        font-size: 24px;
+        margin-top: 30px;
+    }
+    button#prob2{
+        width: 90%;
+        margin-left: 5%;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    div.test-container {
+        width: 95%;
+        margin-left: 2.5%;
+        min-height: 500px;
+    }
+    div.test-question {
+        font-size: 20px;
+    }
+    div.test-options {
+        font-size: 18px;
+    }
+    button#submit-test {
+        width: 80%;
+        margin-left: 10%;
+        height: 60px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px){
+    div.reg{
+        width: 95%;
+        margin-left: 2.5%;
+        font-size: 18px;
+    }
+    div.reg h2{
+        font-size: 20px;
+    }
+    div.reg input[type="text"]{
+        width: 95%;
+        font-size: 14px;
+        height: 40px;
+    }
+    div.reg input[type="date"]{
+        width: 95%;
+        font-size: 14px;
+        height: 40px;
+    }
+    div.reg input[type="submit"]{
+        width: 90%;
+        font-size: 16px;
+        height: 50px;
+    }
+    div.reg table{
+        font-size: 16px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+    div.qwadrat{
+        font-size: 20px;
+    }
+    div.form{
+        font-size: 20px;
+    }
+    button#prob{
+        font-size: 16px;
+        height: 50px;
+    }
+    button#prob2{
+        font-size: 16px;
+        height: 50px;
+    }
+    div.card1{
+        font-size: 16px;
+    }
+    div.card2{
+        font-size: 16px;
+    }
+    div.card3{
+        font-size: 16px;
+    }
+
+    div.test-container {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    div.test-question {
+        font-size: 18px;
+    }
+    div.test-options {
+        font-size: 16px;
+    }
+    button#submit-test {
+        width: 90%;
+        margin-left: 5%;
+        height: 55px;
+        font-size: 18px;
+    }
+}
+
+/* === СЕТКА МОДУЛЕЙ === */
+.modules-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 5% auto;
+    padding: 20px;
+}
+
+.module-card {
+    background: linear-gradient(135deg, #fe218b 0%, #21b0fe 100%);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 5px solid #fed700;
+}
+
+.module-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Заблокированные модули */
+.module-card.locked {
+    background: linear-gradient(135deg, #666 0%, #999 100%);
+    border-color: #ccc;
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.module-card.locked:hover {
+    transform: none;
+}
+
+.module-icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.module-card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.module-card p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.module-btn {
+    background-color: #fed700;
+    color: #fe218b;
+    border: none;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.module-btn:hover {
+    background-color: #fff;
+    color: #fe218b;
+}
+
+.module-btn.disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.module-btn.disabled:hover {
+    background-color: #ccc;
+    color: #666;
+}
+
+/* Адаптивность для модулей */
+@media (max-width: 768px) {
+    .modules-container {
+        grid-template-columns: 1fr;
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    
+    .module-card {
+        padding: 20px;
+    }
+    
+    .module-icon {
+        font-size: 50px;
+    }
+    
+    .module-card h3 {
+        font-size: 24px;
+    }
+    
+    .module-card p {
+        font-size: 16px;
+    }
+}
+/* === КАРТОЧКИ СЛОВ === */
+.word-card {
+    background: linear-gradient(135deg, #fe218b 0%, #21b0fe 100%);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    color: #fff;
+    border: 3px solid #fed700;
+}
+
+.word-card h3 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: #fed700;
+}
+
+.pronunciation {
+    font-size: 16px;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+.translation {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.example {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.example-ru {
+    font-size: 16px;
+    opacity: 0.8;
+    margin-bottom: 0;
+}
+
+/* === ЭТАПЫ МОДУЛЯ === */
+.stage-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px 0;
+    border: 2px solid #fe218b;
+}
+
+.stage-num {
+    background-color: #fe218b;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.stage-content h4 {
+    color: #fe218b;
+    margin-bottom: 5px;
+}
+
+.stage-content p {
+    color: #666;
+    margin: 0;
+}
+
+/* === РЕЗУЛЬТАТЫ ПРАКТИКИ === */
+.practice-result {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.practice-success {
+    color: green;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.practice-error {
+    color: red;
+    font-size: 18px;
+}
+
+/* === КНОПКИ МОДУЛЯ === */
+.module-btn {
+    background-color: #fed700;
+    color: #fe218b;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.module-btn:hover {
+    background-color: #fe218b;
+    color: #fed700;
+}
+
+.module-btn:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.module-btn:disabled:hover {
+    background-color: #ccc;
+    color: #666;
+}

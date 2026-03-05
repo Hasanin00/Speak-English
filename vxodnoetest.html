@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        /* === СТРАНИЦА РЕЗУЛЬТАТОВ === */
+        .result-box {
+            background-color: #fff;
+            width: 100%;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .level-title {
+            font-size: 36px;
+            color: #fe218b;
+            margin-bottom: 10px;
+        }
+
+        .score-big {
+            font-size: 48px;
+            color: #21b0fe;
+            font-weight: bold;
+        }
+
+        .analysis-list {
+            text-align: left;
+            margin-top: 30px;
+            font-size: 18px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .item-correct {
+            color: green;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .item-wrong {
+            color: red;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            background-color: #ffe6e6;
+        }
+
+        .btn-restart {
+            background-color: #fed700;
+            color: #fe218b;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-restart:hover {
+            background-color: #fe218b;
+            color: #fed700;
+        }
+    </style>
+
+    <!-- Шапка -->
+    <div id="b">
+        <img class="headerlogo" src="img/лого.png" alt="Логотип" width="210" height="110">
+        <div class="l"></div>   
+    </div>
+
+    <!-- Заголовок -->
+    <div class="qwadrat">
+        <h2 align="center">📝 Погнали</h2>
+        <p class="awtxt" align="center">У вас будет 10 простых вопросов проверяющих знания английского языка.<br>   
+        За каждый правильный ответ: +1 балл <br>
+        Максимальный результат: 10 баллов <br>
+        Результат переводится в проценты, по которым определяется ваш уровень.<br>  
+        Время не ограничено!!</p>
+    </div>
+
+    <!-- Контейнер теста -->
+    <div class="test-container">
+        <form id="test-form">
+            <!-- Вопрос 1 -->
+            <div class="test-question">
+                <p>1️⃣ How ___ you?</p>
+                <div class="test-options">
+                    <input type="radio" name="q1" value="A" id="q1a"><label for="q1a">A) is</label><br>
+                    <input type="radio" name="q1" value="B" id="q1b"><label for="q1b">B) are</label><br>
+                    <input type="radio" name="q1" value="C" id="q1c"><label for="q1c">C) am</label>
+                </div>
+            </div>
+            <!-- Вопрос 2 -->
+            <div class="test-question">
+                <p>2️⃣ What ___ your name?</p>
+                <div class="test-options">
+                    <input type="radio" name="q2" value="A" id="q2a"><label for="q2a">A) is</label><br>
+                    <input type="radio" name="q2" value="B" id="q2b"><label for="q2b">B) are</label><br>
+                    <input type="radio" name="q2" value="C" id="q2c"><label for="q2c">C) be</label>
+                </div>
+            </div>
+            <!-- Вопрос 3 -->
+            <div class="test-question">
+                <p>3️⃣ I ___ from Russia.</p>
+                <div class="test-options">
+                    <input type="radio" name="q3" value="A" id="q3a"><label for="q3a">A) is</label><br>
+                    <input type="radio" name="q3" value="B" id="q3b"><label for="q3b">B) are</label><br>
+                    <input type="radio" name="q3" value="C" id="q3c"><label for="q3c">C) am</label>
+                </div>
+            </div>
+            <!-- Вопрос 4 -->
+            <div class="test-question">
+                <p>4️⃣ ___ you speak English?</p>
+                <div class="test-options">
+                    <input type="radio" name="q4" value="A" id="q4a"><label for="q4a">A) Does</label><br>
+                    <input type="radio" name="q4" value="B" id="q4b"><label for="q4b">B) Do</label><br>
+                    <input type="radio" name="q4" value="C" id="q4c"><label for="q4c">C) Is</label>
+                </div>
+            </div>
+            <!-- Вопрос 5 -->
+            <div class="test-question">
+                <p>5️⃣ She ___ a cat.</p>
+                <div class="test-options">
+                    <input type="radio" name="q5" value="A" id="q5a"><label for="q5a">A) have</label><br>
+                    <input type="radio" name="q5" value="B" id="q5b"><label for="q5b">B) has</label><br>
+                    <input type="radio" name="q5" value="C" id="q5c"><label for="q5c">C) haves</label>
+                </div>
+            </div>
+            <!-- Вопрос 6 -->
+            <div class="test-question">
+                <p>6️⃣ They ___ playing football now.</p>
+                <div class="test-options">
+                    <input type="radio" name="q6" value="A" id="q6a"><label for="q6a">A) is</label><br>
+                    <input type="radio" name="q6" value="B" id="q6b"><label for="q6b">B) am</label><br>
+                    <input type="radio" name="q6" value="C" id="q6c"><label for="q6c">C) are</label>
+                </div>
+            </div>
+            <!-- Вопрос 7 -->
+            <div class="test-question">
+                <p>7️⃣ My brother ___ like coffee.</p>
+                <div class="test-options">
+                    <input type="radio" name="q7" value="A" id="q7a"><label for="q7a">A) don't</label><br>
+                    <input type="radio" name="q7" value="B" id="q7b"><label for="q7b">B) doesn't</label><br>
+                    <input type="radio" name="q7" value="C" id="q7c"><label for="q7c">C) isn't</label>
+                </div>
+            </div>
+            <!-- Вопрос 8 -->
+            <div class="test-question">
+                <p>8️⃣ ___ is your birthday?</p>
+                <div class="test-options">
+                    <input type="radio" name="q8" value="A" id="q8a"><label for="q8a">A) What</label><br>
+                    <input type="radio" name="q8" value="B" id="q8b"><label for="q8b">B) Where</label><br>
+                    <input type="radio" name="q8" value="C" id="q8c"><label for="q8c">C) When</label>
+                </div>
+            </div>
+            <!-- Вопрос 9 -->
+            <div class="test-question">
+                <p>9️⃣ I ___ to music every day.</p>
+                <div class="test-options">
+                    <input type="radio" name="q9" value="A" id="q9a"><label for="q9a">A) listen</label><br>
+                    <input type="radio" name="q9" value="B" id="q9b"><label for="q9b">B) listens</label><br>
+                    <input type="radio" name="q9" value="C" id="q9c"><label for="q9c">C) listening</label>
+                </div>
+            </div>
+            <!-- Вопрос 10 -->
+            <div class="test-question">
+                <p>🔟 We ___ TV yesterday.</p>
+                <div class="test-options">
+                    <input type="radio" name="q10" value="A" id="q10a"><label for="q10a">A) watch</label><br>
+                    <input type="radio" name="q10" value="B" id="q10b"><label for="q10b">B) watched</label><br>
+                    <input type="radio" name="q10" value="C" id="q10c"><label for="q10c">C) watches</label>
+                </div>
+            </div>
+
+            <hr>
+            <div align="center">
+                <button type="button" id="submit-test">ПРОВЕРИТЬ РЕЗУЛЬТАТЫ</button>
+            </div>
+        </form>
+
+        <!-- 🔥 БЛОК РЕЗУЛЬТАТОВ (скрыт по умолчанию) -->
+        <div id="results-block" style="display: none;">
+            <div id="results-content"></div>
+            <div align="center" style="margin-top: 30px;">
+                <button type="button" id="back-home" class="btn-restart">НА ГЛАВНУЮ</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="logiks.js"></script>
+</body>
+</html>
